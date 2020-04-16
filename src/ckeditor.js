@@ -31,6 +31,7 @@ import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 // custom
 import Base64UploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/base64uploadadapter';
 import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment';
+import Font from '@ckeditor/ckeditor5-font/src/font';
 
 export default class InlineEditor extends InlineEditorBase {}
 
@@ -44,6 +45,7 @@ InlineEditor.builtinPlugins = [
 	BlockQuote,
 	CKFinder,
 	EasyImage,
+	Font,
 	Heading,
 	Image,
 	ImageCaption,
@@ -71,6 +73,7 @@ InlineEditor.defaultConfig = {
 			'|',
 			'bold',
 			'italic',
+			'fontColor',
 			'link',
 			'bulletedList',
 			'numberedList',
